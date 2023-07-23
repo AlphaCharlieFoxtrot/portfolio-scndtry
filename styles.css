@@ -35,7 +35,7 @@ header .logo{
     border-right: 3px solid darkgrey;
 }
 header nav{
-    width: 80%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,6 +54,9 @@ header nav{
 main{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*first page*/
 #landingPage{
@@ -116,11 +119,11 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 40px;
     width: 100%;
     min-height: 100vh;
     background-color: darkgoldenrod;
     gap: 50px;
+    padding: 5%;
 }
 /*avatar*/
 .css-avatar{
@@ -290,7 +293,7 @@ main{
 /*split*/
 .splitter-line{
     width: 65%;
-    height: 3px;
+    height: 5px;
     background-color: #242424;
     border-radius: 50%;
 }
@@ -303,12 +306,16 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
+}
+.title-prjts{
+    width: 100%;
+    text-align: left;
 }
 .my-projects a{
     min-height: 200px;
     height: 100%;
-    width:90%;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +364,7 @@ a .card-project{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 45px;
     width: 90%;
     height: 90%;
     color: white;
@@ -381,12 +388,13 @@ form .identify-you{
     min-height: 200px;
 }
 #submit{
-    width: 60%;
-    min-height: 55px;
+    width: 65%;
+    min-height: 65px;
     border-radius: 50px;
     border: none;
     background: linear-gradient(45deg,darkblue,lightgreen);
     transition: 0.5s;
+    font-size: 1.25em;
 }
 #submit:hover{
     transform: scale(1.15);
@@ -396,7 +404,7 @@ form .identify-you{
 }
 #text-area, #address_mail, #name{
     border-radius: 10px;
-    padding: 10%;
+    padding: 3%;
 }
 /**footer**/
 footer{
@@ -405,6 +413,86 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 5%;
+    padding: 3%;
     gap: 10px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width:768px) {
+    header nav{
+        width: 50%;
+    }
+    /*frstpg*/
+    #landingPage{
+        max-width: 775px;
+        gap: 60px;
+    }
+    .txt-intro{
+        font-size: 1em;
+    }
+    .txt-intro span{
+        font-size: 1.8em;
+    }
+    .cta-box{
+        flex-direction: row;
+    }
+    .cta{
+        width: 40%;
+    }
+    /*myproject*/
+    .section-about{
+        gap: 80px;
+    }
+    .me{
+        gap: 50px;
+    }
+    .my-projects{
+        display: flex;
+        flex-direction: row;
+    }
+    .my-projects a{
+        width: 30%;
+    }
+    /**/
+    #submit{
+        width: 45%;
+        min-height: 75px;
+        margin-top: 50px;
+        font-size: 1.8em;
+    }
+    /*footer*/
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer nav{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px) {
+    .me{
+        flex-direction: row;
+        align-items: center;
+    }
+    .img{
+        width: 40%;
+    }
+    /*contact*/
+    form .identify-you{
+        flex-direction: row;
+    }
+    #address_mail, #name, #text-area{
+        padding: 6%;
+    }
 }
