@@ -481,6 +481,9 @@ footer nav{
 }
 
 @media (min-width:1024px) {
+    .section-about{
+        gap: 40px;
+    }
     .me{
         flex-direction: row;
         align-items: center;
@@ -489,10 +492,16 @@ footer nav{
         width: 40%;
     }
     /*contact*/
+    .contact form{
+        width: 80%;
+    }
     form .identify-you{
         flex-direction: row;
     }
     #address_mail, #name, #text-area{
-        padding: 6%;
+        padding: 4%;
+    }
+    #submit{
+        width: 30%;
     }
 }
