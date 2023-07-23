@@ -362,7 +362,7 @@ a .card-project{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 30px;
     width: 90%;
     height: 90%;
     color: white;
@@ -393,6 +393,7 @@ form .identify-you{
     background: linear-gradient(45deg,darkblue,lightgreen);
     transition: 0.5s;
     font-size: 1.25em;
+    margin-bottom: 20px;
 }
 #submit:hover{
     transform: scale(1.15);
@@ -460,7 +461,7 @@ footer nav{
     #submit{
         width: 45%;
         min-height: 75px;
-        margin-top: 50px;
+        margin-top: 15px;
         font-size: 1.8em;
     }
     /*footer*/
